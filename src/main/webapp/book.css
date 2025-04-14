@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://media.istockphoto.com/id/1272128530/photo/home-with-blue-siding-and-stone-fa%C3%A7ade-on-base-of-home.jpg?s=612x612&w=0&k=20&c=2nv-93cqakGCvVQ1CMavx_o14HSBruCDwKdv3Llh5Ek=");
+    background-position: center;
+    background-size: 1600px;
+    background-repeat: no-repeat;
+}
+#text-white text-center{
+    color: black;
+
+}
+#form{
+    background-color:lightgrey;
+    height:400px;
+    width:800px;
+    margin: auto;
+    margin-top: 100px;
+    opacity:0.7;
+}
+#first-group{
+    border:none;
+    width:400px;
+    margin-top: 38px;
+    position: absolute;
+}
+#content{
+    border: 1px solid black;
+    margin:10px;
+    margin-left: 8px;
+    padding:5px;
+}
+#content #input-group{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left:8px;
+    width:300px;
+    color:black;
+}
+::placeholder{
+    color:black;
+    font-size: large;
+}
+.fa{
+    display:inline-block;
+    color:lightcoral;
+    border-right:1px solid #fff;
+    padding:8px;
+    margin-left: 8px;
+}
+#second-group{
+    border:none;
+    width:400px;
+    margin-top: 55px;
+    margin-left:400px;
+}
+#submit-btn{
+    margin-top: 10px;
+    margin-left: 300px;
+    background: transparent;
+    color:#fff;
+    width:150px;
+    border:1px solid lightblue;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+}

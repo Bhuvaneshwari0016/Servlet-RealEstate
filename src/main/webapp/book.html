@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      h1{
+            color: black;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> booking form</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+<form class="form-group" action="/BackendPro/BookServlet" method="post">
+    <div id="form">
+        <h1>Perfect Home To Live</h1>
+
+        <div id="first-group">
+            <div id="content">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" id="input-group" name="firstName" placeholder="First name">
+            </div>
+
+            <div id="content">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <input type="number" id="input-group" name="phone" placeholder="Phone number">
+            </div>
+
+            <div id="content">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <select id="input-group" name="propertyType" style="background-color: white;">
+                    <option value="">Property </option>
+                    <option value="Sale">Sale</option>
+                    <option value="Rent">Rent</option>
+                </select>
+            </div>
+
+            <div id="content">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <select id="input-group" name="propertyName" style="background-color: white;">
+                    <option value="">Property Name</option>
+                    <option value="Dream Gardens">Dream Gardens</option>
+                    <option value="Cityscape Residences">Cityscape Residences</option>
+                    <option value="Prim Rose Hills">Prim Rose Hills</option>
+                    <option value="The Gardenia">The Gardenia</option>
+                    <option value="Gold Mist Apartment">Gold Mist Apartment</option>
+                    <option value="Bliss Residences">Bliss Residences</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="second-group">
+            <div id="content">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" id="input-group" name="email" placeholder="Email">
+            </div>
+
+            <div id="content">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                <select id="input-group" name="propertyArea" style="background-color: white;">
+                    <option value="">Property Area</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Theni">Theni</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                </select>
+            </div>
+
+            <div id="content">
+                <i class="fa fa-rupee" aria-hidden="true"></i>
+                <select id="input-group" name="amount" style="background-color: white;">
+                    <option value="">Property Amount</option>
+                    <option value="4500000">₹45,00,000</option>
+                    <option value="5000000">₹50,00,000</option>
+                    <option value="3500000">₹35,00,000</option>
+                    <option value="4000000">₹40,00,000</option>
+                </select>
+            </div>
+
+            <div id="content">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <select id="input-group" name="apartmentType" style="background-color: white;">
+                    <option value="">Apartment Type</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" id="submit-btn">Book Now</button>
+    </div>
+</form>
+    </div>
+</body>
+</html>

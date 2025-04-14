@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Application Name -->
+    <display-name>BackendPro</display-name>
+  <servlet>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>servlet.BookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/BookServlet</url-pattern>
+</servlet-mapping>
+  
+    <!-- ContactServlet Definition and Mapping -->
+    <servlet>
+        <servlet-name>ContactServlet</servlet-name>
+        <servlet-class>servlet.ContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactServlet</servlet-name>
+        <url-pattern>/ContactServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- RegisterServlet Definition and Mapping -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- LoginServlet Definition and Mapping -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List (default page for the app) -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>real.html</welcome-file>
+        <welcome-file>success.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+
+</element>
